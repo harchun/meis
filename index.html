@@ -1,144 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="zh-Hant">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>美時集團｜美業共營合作計畫</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>芳香療癒專業培訓課程</title>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap');
-:root{--ink:#151515;--paper:#f6f4ef;--gold:#ad8146;--muted:#77716a;--line:#d8d1c6;--dark:#181818}
-*{box-sizing:border-box}html{scroll-snap-type:y mandatory;scroll-behavior:smooth}body{margin:0;background:#222;font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;color:var(--ink)}
-.slide{min-height:100vh;scroll-snap-align:start;position:relative;overflow:hidden;padding:7vh 9vw;display:flex;align-items:center;background:var(--paper)}
-.dark{background:var(--dark);color:#f7f4ee}.gold{background:var(--gold);color:#fff}.slide:after{content:"";position:absolute;inset:24px;border:1px solid rgba(173,129,70,.2);pointer-events:none}.dark:after{border-color:rgba(255,255,255,.1)}.gold:after{border-color:rgba(255,255,255,.25)}
-.page{position:absolute;right:9vw;top:43px;font-size:11px;letter-spacing:.2em;opacity:.5}.label{font-size:11px;letter-spacing:.3em;font-weight:800;color:var(--gold);margin-bottom:20px}.dark .label,.gold .label{color:#e3c28f}
-h1,h2{margin:0;font-weight:900;line-height:1.06;letter-spacing:-.05em}h1{font-size:clamp(60px,8vw,122px)}h2{font-size:clamp(43px,5.8vw,80px)}.serif{font-family:"Playfair Display",serif;font-weight:600}.goldText{color:var(--gold)}
-.lead{font-size:clamp(18px,2vw,25px);line-height:1.75;color:#5e5952;max-width:900px;margin-top:28px}.dark .lead{color:#bbb5ab}.gold .lead{color:#fff}
-.wrap{width:100%}.center{text-align:center;margin:auto}.center .lead{margin-left:auto;margin-right:auto}
-.hero{width:100%;display:grid;grid-template-columns:1.25fr .75fr;gap:7vw;align-items:center}.brand{border-left:1px solid var(--gold);padding-left:4vw}.brandName{font-size:clamp(35px,4.5vw,66px);font-weight:800;letter-spacing:.12em}.brandSub{font-size:11px;letter-spacing:.3em;color:#999;margin-top:12px}
-.fee{font-size:clamp(75px,12vw,175px);font-weight:900;letter-spacing:-.08em;line-height:.85;color:var(--gold);margin-top:40px}.fee small{font-size:.18em;color:#777;letter-spacing:.15em}
-.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:45px}.card{background:#fff;border:1px solid var(--line);padding:31px 26px;min-height:220px}.card .no{font-size:11px;letter-spacing:.2em;color:var(--gold);font-weight:800}.card h3{font-size:23px;margin:21px 0 9px}.card p{font-size:14px;line-height:1.8;color:#777;margin:0}
-table{width:100%;border-collapse:collapse;margin-top:38px;background:#fff}.dark table{background:#252525}th{background:#2d2d2d;color:#fff;font-size:12px;letter-spacing:.1em}th,td{padding:20px 14px;text-align:center;border-bottom:1px solid var(--line)}.dark td{border-color:#444;color:#eee}td:first-child{text-align:left;font-weight:700}td strong{font-size:29px;color:var(--gold)}
-.dual{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:48px}.box{padding:38px;background:#fff;border:1px solid var(--line);min-height:280px}.box.darkbox{background:#242424;color:#fff;border-color:#444}.box h3{font-size:31px;margin:12px 0}.box p{font-size:15px;line-height:1.85;color:#777}.darkbox p{color:#bdb7ae}.tag{display:inline-block;font-size:10px;letter-spacing:.22em;color:var(--gold);font-weight:800}
-.supports{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);margin-top:45px}.support{padding:27px 22px;border-right:1px solid var(--line)}.support:last-child{border:0}.support b{font-size:11px;letter-spacing:.2em;color:var(--gold)}.support h3{font-size:23px;margin:14px 0 7px}.support p{font-size:14px;line-height:1.75;color:#777;margin:0}
-.big{font-size:clamp(65px,9vw,135px);font-weight:900;letter-spacing:-.07em;line-height:.9}.quote{font-size:clamp(29px,3.8vw,52px);font-weight:800;line-height:1.4}.path{display:flex;margin-top:48px}.pathItem{flex:1;border-top:2px solid var(--gold);padding:25px 20px}.pathItem:not(:last-child){border-right:1px solid var(--line)}.pathItem b{font-size:10px;letter-spacing:.2em;color:var(--gold)}.pathItem h3{font-size:22px;margin:13px 0 7px}.pathItem p{font-size:14px;line-height:1.7;color:#777;margin:0}
-.cta{display:inline-block;border:1px solid currentColor;padding:14px 30px;margin-top:35px;font-size:12px;font-weight:800;letter-spacing:.16em}
-@media(max-width:850px){.hero{grid-template-columns:1fr}.brand{display:none}.cards,.supports,.dual{grid-template-columns:1fr 1fr}.path{flex-direction:column}.pathItem{border-right:0!important;border-bottom:1px solid var(--line)}th,td{padding:10px 5px;font-size:12px}}
+:root{--cream:#f4efe6;--paper:#fbf8f1;--ink:#302b25;--muted:#746b60;--green:#596650;--rose:#a98578;--line:#d9d0c2;--gold:#b69a6b}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);background:var(--cream);font-family:"Noto Serif TC","PingFang TC","Microsoft JhengHei",serif}
+.page{width:min(1400px,calc(100% - 32px));margin:24px auto;background:var(--paper);box-shadow:0 20px 70px rgba(62,52,39,.15);overflow:hidden}
+.hero{position:relative;min-height:390px;padding:55px 7% 48px;background:linear-gradient(90deg,#fbf8f1 0%,rgba(251,248,241,.9) 52%,rgba(251,248,241,.4) 100%);overflow:hidden}
+.hero:before{content:"";position:absolute;width:380px;height:380px;right:-120px;top:-155px;border-radius:50%;background:rgba(190,204,175,.38)}
+.leaf{position:absolute;width:210px;height:110px;right:35px;top:8px;border-radius:100% 0 100% 0;background:linear-gradient(135deg,#74816b,#465441);transform:rotate(-25deg);opacity:.85}.leaf:after{content:"";position:absolute;width:2px;height:130px;left:50%;top:-10px;background:#d5dcc7;transform:rotate(35deg)}
+.eyebrow{position:relative;letter-spacing:.35em;font-size:13px;color:#675e53;margin-bottom:20px}.hero h1{position:relative;margin:0;font-size:clamp(40px,5vw,72px);font-weight:500;letter-spacing:.12em}.en{position:relative;margin-top:12px;font:500 18px Georgia,serif;letter-spacing:.34em}.tagline{position:relative;margin-top:20px;color:#6e655b;font-size:17px;letter-spacing:.15em}.signature{position:absolute;left:7%;bottom:34px;font:italic 31px "Brush Script MT","Segoe Script",cursive;transform:rotate(-7deg);color:#655c52}.drop{position:absolute;right:18%;top:115px;width:33px;height:59px;border-radius:65% 35% 60% 40%;transform:rotate(35deg);background:linear-gradient(135deg,#dac59f,#92744a);box-shadow:0 6px 18px rgba(94,68,32,.18)}
+.intro{padding:38px 7% 18px;text-align:center}.intro h2{font-size:28px;font-weight:500;letter-spacing:.12em;margin:0 0 12px}.intro p{max-width:800px;margin:auto;color:var(--muted);line-height:2}
+.schedule{display:grid;grid-template-columns:1fr 1fr;gap:26px;padding:28px 4.5% 52px}.day{border:1px solid rgba(126,113,94,.18);border-radius:20px;overflow:hidden;box-shadow:0 12px 35px rgba(82,69,51,.07);background:rgba(255,255,255,.72)}.dayhead{color:#fff;padding:21px 24px;display:flex;align-items:center;gap:17px}.d1{background:linear-gradient(135deg,#53604d,#747f68)}.d2{background:linear-gradient(135deg,#9a766b,#b39184)}.week{font-size:18px;letter-spacing:.12em}.dayname{font:500 32px Georgia,serif;letter-spacing:.08em;border-left:1px solid rgba(255,255,255,.45);padding-left:18px}.sub{margin-left:auto;text-align:right;font-size:14px;letter-spacing:.06em;line-height:1.5}
+thead, .head{background:#f0ebe2}.grid{display:grid;grid-template-columns:90px 1.15fr 1.35fr}.head div{padding:14px 18px;font-size:14px;font-weight:700}.row{min-height:79px;border-bottom:1px solid var(--line);align-items:center}.time{text-align:center;padding:10px;font:500 15px/1.4 Georgia,serif;color:#6b6258}.course{padding:14px 15px;border-left:1px solid var(--line);border-right:1px solid var(--line);font-weight:700;line-height:1.55}.desc{padding:14px 17px;color:#675f56;line-height:1.65;font-size:14px}.break{background:linear-gradient(90deg,#f4eee4,#eee7dc);font-style:italic}.break .course,.break .desc{color:#8b7f72}
+.statement{text-align:center;padding:0 7% 55px}.statement .big{font-size:27px;letter-spacing:.14em}.line{width:190px;height:1px;background:#9e9180;margin:16px auto;transform:rotate(-2deg)}.statement .small{font:14px Georgia,serif;letter-spacing:.28em;color:#766c61}
+.benefits{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;margin:0 7% 38px;background:#ddd4c7;border:1px solid #ddd4c7;border-radius:18px;overflow:hidden}.benefit{background:rgba(255,255,255,.76);text-align:center;padding:25px 12px}.icon{font-size:28px;margin-bottom:8px}.benefit strong{display:block;font-size:15px;margin-bottom:4px}.benefit span{font:11px Georgia,serif;letter-spacing:.12em;color:#897e71}
+footer{padding:28px 7%;text-align:center;background:#33372f;color:#e9e4da}.brand{letter-spacing:.35em;font-size:12px;margin-bottom:9px}.slogan{font:20px Georgia,serif;letter-spacing:.16em}
+@media(max-width:900px){.schedule{grid-template-columns:1fr}.sub{display:none}.benefits{grid-template-columns:repeat(2,1fr)}}@media(max-width:600px){.page{width:100%;margin:0}.hero{padding:40px 25px;min-height:340px}.schedule{padding:18px 14px 35px}.grid{grid-template-columns:68px 1fr}.head div:last-child,.desc{display:none}.course{border-right:0}.benefits{margin:0 18px 28px}.intro{padding:28px 22px 10px}.hero h1{font-size:39px}.en{font-size:13px}}
+@media print{body{background:white}.page{width:100%;margin:0;box-shadow:none}}
 </style>
 </head>
 <body>
+<div class="page">
+<header class="hero">
+  <div class="leaf"></div><div class="drop"></div>
+  <div class="eyebrow">專業 × 美學 × 實戰 × 創造更多可能</div>
+  <h1>芳香療癒專業培訓課程</h1>
+  <div class="en">AROMATHERAPY PROFESSIONAL PROGRAM</div>
+  <div class="tagline">以植物的力量・開啟身心美學的專業之路</div>
+  <div class="signature">A Better You</div>
+</header>
 
-<!-- 01 -->
-<section class="slide dark">
-<div class="page">01 / 08</div>
-<div class="hero">
-<div>
-<div class="label">MEISHI GROUP · BEAUTY CO-OPERATION</div>
-<h1>讓專業<br><span class="goldText">更容易被看見</span></h1>
-<p class="lead">美時集團建立美業共營合作模式，整合場地、設備、技術、產品與客源，讓美業工作者與現有店家，都能直接取得所需要的營運資源。</p>
-</div>
-<div class="brand"><div class="brandName">美時集團</div><div class="brandSub">MEISHI GROUP</div></div>
-</div>
+<section class="intro"><h2>第一週｜專業芳療師核心培訓</h2><p>從精油科學、芳香配方，到專業服務流程與身體芳療技術，建立完整的理論基礎、操作能力與現場服務思維。</p></section>
+
+<section class="schedule">
+<article class="day">
+  <div class="dayhead d1"><div class="week">第一週</div><div class="dayname">DAY 1</div><div class="sub">芳療專業基礎與精油科學<br>Aromatherapy Fundamentals</div></div>
+  <div class="grid head"><div>時間</div><div>課程名稱</div><div>課程內容</div></div>
+  <div class="grid row "><div class="time">09:00<br>09:50</div><div class="course">芳療學專業導論</div><div class="desc">芳香療法發展脈絡、基礎理論架構、芳療師專業定位與服務核心。</div></div><div class="grid row "><div class="time">10:00<br>10:50</div><div class="course">精油效能與芳香分子解析</div><div class="desc">常用精油特性、主要芳香分子、氣味特質與身心應用方向。</div></div><div class="grid row "><div class="time">11:00<br>11:50</div><div class="course">精油品質鑑別與專業選油學</div><div class="desc">精油來源、純度、萃取方式、保存條件與品質判讀。</div></div><div class="grid row break"><div class="time">12:00<br>13:00</div><div class="course">午休</div><div class="desc">Enjoy a better you.</div></div><div class="grid row "><div class="time">13:00<br>13:50</div><div class="course">精油專業應用技術 I</div><div class="desc">精油使用方式、擴香、局部應用與日常芳香照護。</div></div><div class="grid row "><div class="time">14:00<br>14:50</div><div class="course">精油專業應用技術 II</div><div class="desc">不同使用情境的精油搭配與實務操作原則。</div></div><div class="grid row "><div class="time">15:00<br>15:50</div><div class="course">芳香配方設計學 I</div><div class="desc">基礎配方結構、香氣層次、比例配置與配方邏輯。</div></div><div class="grid row "><div class="time">16:00<br>17:00</div><div class="course">芳香配方設計學 II</div><div class="desc">個人化芳香配方設計、實際調製與專業應用演練。</div></div>
+</article>
+
+<article class="day">
+  <div class="dayhead d2"><div class="week">第一週</div><div class="dayname">DAY 2</div><div class="sub">專業服務流程與身體芳療技術<br>Professional Service & Body Treatment</div></div>
+  <div class="grid head"><div>時間</div><div>課程名稱</div><div>課程內容</div></div>
+  <div class="grid row "><div class="time">10:00<br>10:50</div><div class="course">芳療服務管理與專業接待流程 I</div><div class="desc">顧客接待、需求溝通、服務前評估與專業服務流程。</div></div><div class="grid row "><div class="time">11:00<br>12:00</div><div class="course">芳療服務管理與專業接待流程 II</div><div class="desc">顧客需求分析、服務方案設計、流程標準化與體驗管理。</div></div><div class="grid row break"><div class="time">12:00<br>13:00</div><div class="course">午休</div><div class="desc">Recharge for a better tomorrow.</div></div><div class="grid row "><div class="time">13:00<br>13:50</div><div class="course">身體芳療技術 I｜基礎操作學</div><div class="desc">身體芳療基本手法、操作順序、施力原則與專業姿勢。</div></div><div class="grid row "><div class="time">14:00<br>14:50</div><div class="course">身體芳療技術 II｜深層舒緩技術</div><div class="desc">肌肉放鬆、身體舒緩與不同部位的操作技術。</div></div><div class="grid row "><div class="time">15:00<br>15:50</div><div class="course">身體芳療技術 III｜區域精準操作</div><div class="desc">肩頸、背部、腰臀及四肢等區域操作技巧。</div></div><div class="grid row "><div class="time">16:00<br>17:00</div><div class="course">身體芳療技術 IV｜完整服務實務演練</div><div class="desc">全流程實操、技術整合、服務節奏與顧客體驗優化。</div></div>
+</article>
 </section>
 
-<!-- 02 -->
-<section class="slide">
-<div class="page">02 / 08</div>
-<div class="wrap">
-<div class="label">PART 01 · FOR BEAUTY PROFESSIONALS</div>
-<h2>給有專業技術的<br><span class="goldText">美業職人</span></h2>
-<p class="lead">不需要先承擔完整店面的成本。加入共營平台，以共享方式取得工作所需的基礎資源，專心把技術與服務做好。</p>
-<div class="fee">4,110 <small>／月</small></div>
-<p class="lead">月費包含四大基礎支持：場地、設備、技術、產品。</p>
-</div>
+<section class="statement"><div class="big">讓芳香，成為改變人生的力量</div><div class="line"></div><div class="small">MORE THAN BEAUTY · A BETTER LIFE</div></section>
+<section class="benefits">
+<div class="benefit"><div class="icon">✦</div><strong>專業師資</strong><span>PROFESSIONAL</span></div><div class="benefit"><div class="icon">♛</div><strong>實務導向</strong><span>PRACTICAL</span></div><div class="benefit"><div class="icon">♡</div><strong>小班精緻</strong><span>PREMIUM</span></div><div class="benefit"><div class="icon">◇</div><strong>認證輔導</strong><span>CERTIFICATION</span></div><div class="benefit"><div class="icon">★</div><strong>就業支援</strong><span>CAREER SUPPORT</span></div>
 </section>
-
-<!-- 03 -->
-<section class="slide">
-<div class="page">03 / 08</div>
-<div class="wrap">
-<div class="label">FOUR CORE SUPPORTS</div>
-<h2>加入平台<br><span class="serif goldText">四大支持一次到位</span></h2>
-<div class="cards">
-<div class="card"><div class="no">01 / SPACE</div><h3>場地支持</h3><p>提供專業美業服務空間，降低個人工作與營運成本。</p></div>
-<div class="card"><div class="no">02 / EQUIPMENT</div><h3>設備支持</h3><p>共享美容儀器與相關設備，減少設備採購壓力。</p></div>
-<div class="card"><div class="no">03 / SKILL</div><h3>技術支持</h3><p>提供技術交流、培訓與操作支援，持續提升專業能力。</p></div>
-<div class="card"><div class="no">04 / PRODUCT</div><h3>產品支持</h3><p>提供合作產品與產品資源，讓服務內容更完整。</p></div>
+<footer><div class="brand">AROMATHERAPY BEAUTY PROFESSIONAL TRAINING</div><div class="slogan">NATURAL · HEALTHY · BEAUTIFUL</div></footer>
 </div>
-</div>
-</section>
-
-<!-- 04 -->
-<section class="slide dark">
-<div class="page">04 / 08</div>
-<div class="wrap">
-<div class="label">SIMPLE & TRANSPARENT</div>
-<h2>分潤透明<br><span class="serif goldText">依實際資源需求</span></h2>
-<table>
-<tr><th>合作方式</th><th>公司</th><th>產品</th><th>前端導購講師</th><th>美業職人</th></tr>
-<tr><td>基礎合作</td><td>10%</td><td>—</td><td>—</td><td><strong>90%</strong></td></tr>
-<tr><td>使用公司產品</td><td>10%</td><td>20%</td><td>—</td><td><strong>70%</strong></td></tr>
-<tr><td>產品＋前端導購講師</td><td>10%</td><td>20%</td><td>20%</td><td><strong>50%</strong></td></tr>
-</table>
-<p class="lead">公司固定 10%；產品與前端導購講師，依實際使用增加相應分配。</p>
-</div>
-</section>
-
-<!-- 05 -->
-<section class="slide">
-<div class="page">05 / 08</div>
-<div class="wrap">
-<div class="label">PART 02 · FOR EXISTING SHOP OWNERS</div>
-<h2>你已經有店<br><span class="goldText">我們幫你把客人帶進來</span></h2>
-<p class="lead">如果你已經擁有店面與團隊，不需要改變原本的經營模式。美時集團可以直接提供客源，將客戶導入你的店面。</p>
-<div class="dual">
-<div class="box"><span class="tag">CUSTOMER FLOW</span><h3>客源支持</h3><p>由美時集團整合客源與行銷資源，將適合的客戶導向合作店家，讓現有店面的空間與人力產能得到更好的利用。</p></div>
-<div class="box"><span class="tag">KEEP YOUR STORE</span><h3>不必重新開始</h3><p>你保留自己的店面、團隊與既有客戶；集團提供新的客源與合作資源，直接導入現有營運體系。</p></div>
-</div>
-</div>
-</section>
-
-<!-- 06 -->
-<section class="slide">
-<div class="page">06 / 08</div>
-<div class="wrap">
-<div class="label">MORE THAN CUSTOMER ACQUISITION</div>
-<h2>不只是導客<br><span class="serif goldText">設備與技術也能支持</span></h2>
-<div class="supports">
-<div class="support"><b>01</b><h3>客源支持</h3><p>提供客戶導流，直接導入現有店面。</p></div>
-<div class="support"><b>02</b><h3>設備支持</h3><p>依合作需求提供設備與儀器資源。</p></div>
-<div class="support"><b>03</b><h3>技術支持</h3><p>提供技術交流、培訓與服務支援。</p></div>
-<div class="support"><b>04</b><h3>營運協作</h3><p>整合平台資源，協助店家提升服務能力。</p></div>
-</div>
-<p class="quote" style="margin-top:55px">「你有店，我們有資源；<br>讓資源直接進入你的店。」</p>
-</div>
-</section>
-
-<!-- 07 -->
-<section class="slide gold">
-<div class="page">07 / 08</div>
-<div class="center">
-<div class="label">THE DIFFERENCE · MEDICAL BEAUTY</div>
-<h2>更重要的是<br><span style="color:#fff">我們能提供醫美支持</span></h2>
-<p class="lead">美時集團的合作資源不只停留在一般美容服務。透過醫美相關資源與合作體系，讓合作店家有機會接觸更完整的美業服務鏈與客戶需求。</p>
-<div class="path">
-<div class="pathItem" style="border-color:#fff"><b style="color:#fff">BEAUTY</b><h3>美容服務</h3><p>既有美容專業與服務項目。</p></div>
-<div class="pathItem" style="border-color:#fff"><b style="color:#fff">MEDICAL BEAUTY</b><h3>醫美支持</h3><p>導入醫美相關資源與合作。</p></div>
-<div class="pathItem" style="border-color:#fff"><b style="color:#fff">ECOSYSTEM</b><h3>資源整合</h3><p>形成更完整的美業合作網絡。</p></div>
-</div>
-</div>
-</section>
-
-<!-- 08 -->
-<section class="slide">
-<div class="page">08 / 08</div>
-<div class="center">
-<div class="label">MEISHI GROUP · CO-OPERATION</div>
-<h2>不論你是<br><span class="goldText">美業職人</span> 或 <span class="goldText">現有店主</span></h2>
-<p class="quote" style="margin:35px auto">美時集團，提供你下一個階段需要的資源。</p>
-<p class="lead">美業職人：以共享方式開始，取得場地、設備、技術、產品支持。<br>現有店主：保留自己的店面，直接取得客源、設備、技術與醫美支持。</p>
-<div class="cta">美時集團｜美業共營合作計畫</div>
-</div>
-</section>
-
 </body>
 </html>
